@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio #1</title>
+    <style>
+        .parrafo1 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .parrafo1::first-letter {
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+
+        .parrafo2 {
+            background-color: lightblue;
+            color: black;
+        }
+
+        .parrafo3 {
+            text-align: center;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="parrafo1">
+            este es el primer párrafo con la primera letra en mayúscula y más grande.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p class="parrafo2">
+            Este es el segundo párrafo con fondo azul claro y texto en negro.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p class="parrafo3">
+            Este es el tercer párrafo centrado y subrayado.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+    </div>
+</body>
+</html>
+		
+<title>Ejercicio #2</title>
+<style>
+	
+	a {
+		display: block;
+		margin: 10px 0;
+		text-decoration: none;
+		color: #333;
+		padding-left: 25px;
+		position: relative;
+	}
+
+	
+	a:hover {
+		color: #0066cc;
+	}
+
+	
+	a::before {
+		position: absolute;
+		left: 0;
+		font-size: 18px;
+	}
+
+	
+	a[href*="inicio"]::before {
+		content: "🏠";
+	}
+
+	a[href*="productos"]::before {
+		content: "📦";
+	}
+
+	a[href*="servicios"]::before {
+		content: "🔧";
+	}
+
+	a[href*="contacto"]::before {
+		content: "📧";
+	}
+</style>
+</head>
+<body>
+<ul>
+	<li><a href="#inicio">Inicio</a></li>
+	<li><a href="#productos">Productos</a></li>
+	<li><a href="#servicios">Servicios</a></li>
+	<li><a href="#contacto">Contacto</a></li>
+</ul>
+
+<title>Ejercicio #3</title>
+<style>
+	
+	.contenido > p {
+		background-color: cyan;
+		text-decoration: underline;
+	}
+</style>
+</head>
+<body>
+<div class="contenido">
+	<p>Este es el primer párrafo que tendrá fondo  y estará subrayado.</p>
+	<div>
+		<p>Este es el segundo párrafo dentro del div hijo y no tendrá estilos especiales.</p>
+	</div>
+</div>
+	</body>
+</html>
